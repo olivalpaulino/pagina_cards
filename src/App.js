@@ -1,9 +1,11 @@
 import './App.css';
+import Card from './components/Card';
 
 function App() {
   return (
     <div className="App">
-     <h1>Cards de Vendas</h1>
+     <h1>Ofertas do Dia</h1>
+     <Card props={"Card"} />
     </div>
   );
 }
