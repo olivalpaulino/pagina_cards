@@ -28,30 +28,46 @@ import livro_habitos_atomicos from '../img/habitos_atomicos.jpg';
 import livro_o_jeito_disney_de_encantar_clientes from '../img/o_jeito_disney_de_encantar_clientes.jpg';
 import livro_mude_seus_horarios_mude_sua_vida from '../img/mude_seus_horarios_mude_sua_vida.jpg';
 import livro_a_psicologia_financeira from '../img/a_psicologia_financeira.jpg';
+import livro_manual_de_persuasao_do_fbi from '../img/manual_de_persuasao_do_fbi.jpg';
+import livro_os_7_habitos_das_pessoas_altamente_eficazes from '../img/os_7_habitos_das_pessoas_altamente_eficazes.jpg';
+import livro_o_poder_do_habito from '../img/o_poder_do_habito.jpg';
+import livro_ted_talks from '../img/ted_talks.jpg';
+import livro_neuromarketing from '../img/neuromarketing.jpg';
+import livro_roube_como_um_artista from '../img/roube_como_um_artista.jpg';
+import livro_mostre_seu_trabalho from '../img/mostre_seu_trabalho.jpg';
+import livro_comece_pelo_porque from '../img/comece_pelo_porque.jpg';
 
 const Card = () => {
     let nome_autor = ["Richard Dawkins", "Dale Carnegie", "Robert T. Kiyosaki", "Hastings e Meyer", "Daniel Kahneman", "Ryan Holiday",
     "Hal Elrod", "Brené Brown","T. Harv", "George S.", "William H.", "Daniel Goleman", "Louise L.", "Napoleon Hill", "Napoleon Hill", 
-    "Joseph Murphy", "Tiago Brunet", "Paulo Vieira", "Greg Mckeown", "James Clear", "Richard Branson", "Dr. Suhas", "Morgan Housel"];
+    "Joseph Murphy", "Tiago Brunet", "Paulo Vieira", "Greg Mckeown", "James Clear", "Richard Branson", "Dr. Suhas", "Morgan Housel",
+    "Shafer e Karlins", "Stephen R.", "Charles Duhigg", "Chris Anderson", "Darren Bridger", "Kleon e Villa", "Kleon e Isabel",
+    "Sinek e Geiger"];
     
     let alt_imagem = ["O Gene Egoísta, Richard Dawkins", "Como fazer amigos e influenciar pessoas, Dale Carnegie", "Pai Rico, Pai Pobre", "A Regra é Não Ter Regras", 
     "Rápido e Devagar", "O Ego é Seu Inimigo", "O Milagre da Manhã", "A Coragem de Ser Imperfeito", "Os Segredos da Mente Milionária",
     "O Homem Mais Rico da Babilônia", "Arrume Sua Cama", "Foco", "Você Pode Curar Sua Vida", "Quem Pensa Henriquece", "Mais Esperto que o Diabo",
     "O Poder do Subconsciente", "Especialista em Pessoas", "O Poder da Autorresponsabilidade", "Essencialismo", "Hábitos Atômicos", 
-    "O Jeito Disney de Encantar Clientes", "Mude Seus Horários, Mude Sua Vida", "A Psicologia Financeira"]
+    "O Jeito Disney de Encantar Clientes", "Mude Seus Horários, Mude Sua Vida", "A Psicologia Financeira", "Manual de Persuasão do FBI",
+    "Os 7 Habitos das Pessoas Altamente Eficazes", "O Poder do Hábito", "Ted Talks", "Neuromarketing", "Roube como um Artista",
+    "Mostre seu Trabalho", "Comece pelo Porque"]
     
     let url = ["https://amzn.to/3nn7mSI", "https://amzn.to/40foeJB", "https://amzn.to/3JJj8Oz", "https://amzn.to/3nkh2gC", "https://amzn.to/3LRp0YJ",
     "https://amzn.to/3lAGGNT", "https://amzn.to/3JNmKzh", "https://amzn.to/3K98ySu", "https://amzn.to/40m570r", "https://amzn.to/3z7r07N",
     "https://amzn.to/3FS7dNh", "https://amzn.to/3LQDWGw", "https://amzn.to/40k0q7m", "https://amzn.to/3ZiNMV1", "https://amzn.to/40CTHFe",
     "https://amzn.to/3ZfEwAP", "https://amzn.to/3z7UVfX", "https://amzn.to/40wNnjf", "https://amzn.to/3LNVDGZ", "https://amzn.to/3ZhHSDv",
-    "https://amzn.to/3ZhIdpL", "https://amzn.to/3nl0WU6", "https://amzn.to/3lDuXy2"];
+    "https://amzn.to/3ZhIdpL", "https://amzn.to/3nl0WU6", "https://amzn.to/3lDuXy2", "https://amzn.to/3lFZA5M", "https://amzn.to/42FaPfk",
+    "https://amzn.to/3LTY2Qw", "https://amzn.to/3Zb0LYE", "https://amzn.to/42DHm5E", "https://amzn.to/3TJfl8A", "https://amzn.to/3z8mYMw",
+    "https://amzn.to/3KaeY3C"];
     
     let url_imagem = [livro_ogene_egoista, livro_como_faz_amigos, livro_pai_rico_pai_pobre, livro_a_regra_e_nao_ter_regra, livro_rapido_e_devagar,
         livro_o_ego_e_seu_inimigo, livro_o_milagre_da_manha, livro_a_coragem_de_ser_imperfeito, livro_os_segredos_da_mente_milionaria,
         livro_o_homem_mais_rico_da_babilonia, livro_arrume_sua_cama, livro_foco, livro_voce_pode_curar_sua_vida, livro_quem_pensa_enriquece, 
         livro_mais_esperto_que_o_diabo, livro_o_poder_do_subconsciente, livro_especialista_em_pessoas, livro_o_poder_da_autorresponsabilidade,
         livro_essencialismo, livro_habitos_atomicos, livro_o_jeito_disney_de_encantar_clientes, livro_mude_seus_horarios_mude_sua_vida,
-        livro_a_psicologia_financeira];
+        livro_a_psicologia_financeira, livro_manual_de_persuasao_do_fbi, livro_os_7_habitos_das_pessoas_altamente_eficazes,
+        livro_o_poder_do_habito, livro_ted_talks, livro_neuromarketing, livro_roube_como_um_artista, livro_mostre_seu_trabalho,
+        livro_comece_pelo_porque];
 
   return (
     <div class="cards">
@@ -78,25 +94,14 @@ const Card = () => {
         <Imagem url={url[20]} url_imagem={url_imagem[20]} alt_imagem={alt_imagem[20]} nome_autor={nome_autor[20]} />
         <Imagem url={url[21]} url_imagem={url_imagem[21]} alt_imagem={alt_imagem[21]} nome_autor={nome_autor[21]} />
         <Imagem url={url[22]} url_imagem={url_imagem[22]} alt_imagem={alt_imagem[22]} nome_autor={nome_autor[22]} />
-        <Imagem url={url[0]} url_imagem={url_imagem[0]} alt_imagem={alt_imagem[0]} nome_autor={nome_autor[0]} />
-        <Imagem url={url[0]} url_imagem={url_imagem[0]} alt_imagem={alt_imagem[0]} nome_autor={nome_autor[0]} />
-        <Imagem url={url[0]} url_imagem={url_imagem[0]} alt_imagem={alt_imagem[0]} nome_autor={nome_autor[0]} />
-        <Imagem url={url[0]} url_imagem={url_imagem[0]} alt_imagem={alt_imagem[0]} nome_autor={nome_autor[0]} />
-        <Imagem url={url[0]} url_imagem={url_imagem[0]} alt_imagem={alt_imagem[0]} nome_autor={nome_autor[0]} />
-        <Imagem url={url[0]} url_imagem={url_imagem[0]} alt_imagem={alt_imagem[0]} nome_autor={nome_autor[0]} />
-        <Imagem url={url[0]} url_imagem={url_imagem[0]} alt_imagem={alt_imagem[0]} nome_autor={nome_autor[0]} />
-        <Imagem url={url[0]} url_imagem={url_imagem[0]} alt_imagem={alt_imagem[0]} nome_autor={nome_autor[0]} />
-        <Imagem url={url[0]} url_imagem={url_imagem[0]} alt_imagem={alt_imagem[0]} nome_autor={nome_autor[0]} />
-        <Imagem url={url[0]} url_imagem={url_imagem[0]} alt_imagem={alt_imagem[0]} nome_autor={nome_autor[0]} />
-        <Imagem url={url[0]} url_imagem={url_imagem[0]} alt_imagem={alt_imagem[0]} nome_autor={nome_autor[0]} />
-        <Imagem url={url[0]} url_imagem={url_imagem[0]} alt_imagem={alt_imagem[0]} nome_autor={nome_autor[0]} />
-        <Imagem url={url[0]} url_imagem={url_imagem[0]} alt_imagem={alt_imagem[0]} nome_autor={nome_autor[0]} />
-        <Imagem url={url[0]} url_imagem={url_imagem[0]} alt_imagem={alt_imagem[0]} nome_autor={nome_autor[0]} />
-        <Imagem url={url[0]} url_imagem={url_imagem[0]} alt_imagem={alt_imagem[0]} nome_autor={nome_autor[0]} />
-        <Imagem url={url[0]} url_imagem={url_imagem[0]} alt_imagem={alt_imagem[0]} nome_autor={nome_autor[0]} />
-        <Imagem url={url[0]} url_imagem={url_imagem[0]} alt_imagem={alt_imagem[0]} nome_autor={nome_autor[0]} />
-        <Imagem url={url[0]} url_imagem={url_imagem[0]} alt_imagem={alt_imagem[0]} nome_autor={nome_autor[0]} />
-        <Imagem url={url[0]} url_imagem={url_imagem[0]} alt_imagem={alt_imagem[0]} nome_autor={nome_autor[0]} />
+        <Imagem url={url[23]} url_imagem={url_imagem[23]} alt_imagem={alt_imagem[23]} nome_autor={nome_autor[23]} />
+        <Imagem url={url[24]} url_imagem={url_imagem[24]} alt_imagem={alt_imagem[24]} nome_autor={nome_autor[24]} />
+        <Imagem url={url[25]} url_imagem={url_imagem[25]} alt_imagem={alt_imagem[25]} nome_autor={nome_autor[25]} />
+        <Imagem url={url[26]} url_imagem={url_imagem[26]} alt_imagem={alt_imagem[26]} nome_autor={nome_autor[26]} />
+        <Imagem url={url[27]} url_imagem={url_imagem[27]} alt_imagem={alt_imagem[27]} nome_autor={nome_autor[27]} />
+        <Imagem url={url[28]} url_imagem={url_imagem[28]} alt_imagem={alt_imagem[28]} nome_autor={nome_autor[28]} />
+        <Imagem url={url[29]} url_imagem={url_imagem[29]} alt_imagem={alt_imagem[29]} nome_autor={nome_autor[29]} />
+        <Imagem url={url[30]} url_imagem={url_imagem[30]} alt_imagem={alt_imagem[30]} nome_autor={nome_autor[30]} />
         <Imagem url={url[0]} url_imagem={url_imagem[0]} alt_imagem={alt_imagem[0]} nome_autor={nome_autor[0]} />
         <Imagem url={url[0]} url_imagem={url_imagem[0]} alt_imagem={alt_imagem[0]} nome_autor={nome_autor[0]} />
         <Imagem url={url[0]} url_imagem={url_imagem[0]} alt_imagem={alt_imagem[0]} nome_autor={nome_autor[0]} />
