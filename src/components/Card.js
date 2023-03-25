@@ -36,13 +36,19 @@ import livro_neuromarketing from '../img/neuromarketing.jpg';
 import livro_roube_como_um_artista from '../img/roube_como_um_artista.jpg';
 import livro_mostre_seu_trabalho from '../img/mostre_seu_trabalho.jpg';
 import livro_comece_pelo_porque from '../img/comece_pelo_porque.jpg';
+import livro_como_convencer_alguem_em_90_segundos from '../img/como_convencer_alguem_em_90_segundos.jpg';
+import livro_faca_fortuna_com_acoes from '../img/faca_fortuna_com_acoes.jpg';
+import livro_48_leis_do_poder from '../img/48_leis_do_poder.jpg';
+import livro_as_armas_da_persuasao from '../img/as_armas_da_persuasao.jpg';
+import livro_atencao_plena from '../img/atencao_plena.jpg';
+import livro_12_regras_para_a_vida from '../img/12_regras_para_a_vida.jpg';
 
 const Card = () => {
     let nome_autor = ["Richard Dawkins", "Dale Carnegie", "Robert T. Kiyosaki", "Hastings e Meyer", "Daniel Kahneman", "Ryan Holiday",
     "Hal Elrod", "Brené Brown","T. Harv", "George S.", "William H.", "Daniel Goleman", "Louise L.", "Napoleon Hill", "Napoleon Hill", 
     "Joseph Murphy", "Tiago Brunet", "Paulo Vieira", "Greg Mckeown", "James Clear", "Richard Branson", "Dr. Suhas", "Morgan Housel",
     "Shafer e Karlins", "Stephen R.", "Charles Duhigg", "Chris Anderson", "Darren Bridger", "Kleon e Villa", "Kleon e Isabel",
-    "Sinek e Geiger"];
+    "Sinek e Geiger", "Nicholas Boothman", "Decío Bazin", "Robert Greene", "Robert B.", "Williams e Penman", "Jordan B."];
     
     let alt_imagem = ["O Gene Egoísta, Richard Dawkins", "Como fazer amigos e influenciar pessoas, Dale Carnegie", "Pai Rico, Pai Pobre", "A Regra é Não Ter Regras", 
     "Rápido e Devagar", "O Ego é Seu Inimigo", "O Milagre da Manhã", "A Coragem de Ser Imperfeito", "Os Segredos da Mente Milionária",
@@ -50,7 +56,8 @@ const Card = () => {
     "O Poder do Subconsciente", "Especialista em Pessoas", "O Poder da Autorresponsabilidade", "Essencialismo", "Hábitos Atômicos", 
     "O Jeito Disney de Encantar Clientes", "Mude Seus Horários, Mude Sua Vida", "A Psicologia Financeira", "Manual de Persuasão do FBI",
     "Os 7 Habitos das Pessoas Altamente Eficazes", "O Poder do Hábito", "Ted Talks", "Neuromarketing", "Roube como um Artista",
-    "Mostre seu Trabalho", "Comece pelo Porque"]
+    "Mostre seu Trabalho", "Comece pelo Porque", "Como Convencer Alguém em 90 Segundos", "Faça Fortuna com Ações", "48 Leis do Poder",
+    "As Armas da Persuasão", "Atenção Plena", "12 Regras para a Vida"]
     
     let url = ["https://amzn.to/3nn7mSI", "https://amzn.to/40foeJB", "https://amzn.to/3JJj8Oz", "https://amzn.to/3nkh2gC", "https://amzn.to/3LRp0YJ",
     "https://amzn.to/3lAGGNT", "https://amzn.to/3JNmKzh", "https://amzn.to/3K98ySu", "https://amzn.to/40m570r", "https://amzn.to/3z7r07N",
@@ -58,7 +65,8 @@ const Card = () => {
     "https://amzn.to/3ZfEwAP", "https://amzn.to/3z7UVfX", "https://amzn.to/40wNnjf", "https://amzn.to/3LNVDGZ", "https://amzn.to/3ZhHSDv",
     "https://amzn.to/3ZhIdpL", "https://amzn.to/3nl0WU6", "https://amzn.to/3lDuXy2", "https://amzn.to/3lFZA5M", "https://amzn.to/42FaPfk",
     "https://amzn.to/3LTY2Qw", "https://amzn.to/3Zb0LYE", "https://amzn.to/42DHm5E", "https://amzn.to/3TJfl8A", "https://amzn.to/3z8mYMw",
-    "https://amzn.to/3KaeY3C"];
+    "https://amzn.to/3KaeY3C", "https://amzn.to/3FSO6Tz", "https://amzn.to/3nkJAXk", "https://amzn.to/3lFgJMU", "https://amzn.to/3JSvhB8",
+    "https://amzn.to/3FSbkc6", "https://amzn.to/3JM8czP"];
     
     let url_imagem = [livro_ogene_egoista, livro_como_faz_amigos, livro_pai_rico_pai_pobre, livro_a_regra_e_nao_ter_regra, livro_rapido_e_devagar,
         livro_o_ego_e_seu_inimigo, livro_o_milagre_da_manha, livro_a_coragem_de_ser_imperfeito, livro_os_segredos_da_mente_milionaria,
@@ -67,7 +75,8 @@ const Card = () => {
         livro_essencialismo, livro_habitos_atomicos, livro_o_jeito_disney_de_encantar_clientes, livro_mude_seus_horarios_mude_sua_vida,
         livro_a_psicologia_financeira, livro_manual_de_persuasao_do_fbi, livro_os_7_habitos_das_pessoas_altamente_eficazes,
         livro_o_poder_do_habito, livro_ted_talks, livro_neuromarketing, livro_roube_como_um_artista, livro_mostre_seu_trabalho,
-        livro_comece_pelo_porque];
+        livro_comece_pelo_porque, livro_como_convencer_alguem_em_90_segundos, livro_faca_fortuna_com_acoes, livro_48_leis_do_poder,
+        livro_as_armas_da_persuasao, livro_atencao_plena, livro_12_regras_para_a_vida];
 
   return (
     <div class="cards">
@@ -102,12 +111,12 @@ const Card = () => {
         <Imagem url={url[28]} url_imagem={url_imagem[28]} alt_imagem={alt_imagem[28]} nome_autor={nome_autor[28]} />
         <Imagem url={url[29]} url_imagem={url_imagem[29]} alt_imagem={alt_imagem[29]} nome_autor={nome_autor[29]} />
         <Imagem url={url[30]} url_imagem={url_imagem[30]} alt_imagem={alt_imagem[30]} nome_autor={nome_autor[30]} />
-        <Imagem url={url[0]} url_imagem={url_imagem[0]} alt_imagem={alt_imagem[0]} nome_autor={nome_autor[0]} />
-        <Imagem url={url[0]} url_imagem={url_imagem[0]} alt_imagem={alt_imagem[0]} nome_autor={nome_autor[0]} />
-        <Imagem url={url[0]} url_imagem={url_imagem[0]} alt_imagem={alt_imagem[0]} nome_autor={nome_autor[0]} />
-        <Imagem url={url[0]} url_imagem={url_imagem[0]} alt_imagem={alt_imagem[0]} nome_autor={nome_autor[0]} />
-        <Imagem url={url[0]} url_imagem={url_imagem[0]} alt_imagem={alt_imagem[0]} nome_autor={nome_autor[0]} />
-        <Imagem url={url[0]} url_imagem={url_imagem[0]} alt_imagem={alt_imagem[0]} nome_autor={nome_autor[0]} />
+        <Imagem url={url[31]} url_imagem={url_imagem[31]} alt_imagem={alt_imagem[31]} nome_autor={nome_autor[31]} />
+        <Imagem url={url[32]} url_imagem={url_imagem[32]} alt_imagem={alt_imagem[32]} nome_autor={nome_autor[32]} />
+        <Imagem url={url[33]} url_imagem={url_imagem[33]} alt_imagem={alt_imagem[33]} nome_autor={nome_autor[33]} />
+        <Imagem url={url[34]} url_imagem={url_imagem[34]} alt_imagem={alt_imagem[34]} nome_autor={nome_autor[34]} />
+        <Imagem url={url[35]} url_imagem={url_imagem[35]} alt_imagem={alt_imagem[35]} nome_autor={nome_autor[35]} />
+        <Imagem url={url[36]} url_imagem={url_imagem[36]} alt_imagem={alt_imagem[36]} nome_autor={nome_autor[36]} />
     </div>
   )
 }
