@@ -22,26 +22,36 @@ import livro_quem_pensa_enriquece from '../img/quem_pensa_enriquece.jpg';
 import livro_mais_esperto_que_o_diabo from '../img/mais_esperto_que_o_diabo.jpg';
 import livro_o_poder_do_subconsciente from '../img/o_poder_do_subconsciente.jpg';
 import livro_especialista_em_pessoas from '../img/especialista_em_pessoas.jpg';
+import livro_o_poder_da_autorresponsabilidade from '../img/o_poder_da_autorresponsabilidade.jpg';
+import livro_essencialismo from '../img/essencialismo.jpg';
+import livro_habitos_atomicos from '../img/habitos_atomicos.jpg';
+import livro_o_jeito_disney_de_encantar_clientes from '../img/o_jeito_disney_de_encantar_clientes.jpg';
+import livro_mude_seus_horarios_mude_sua_vida from '../img/mude_seus_horarios_mude_sua_vida.jpg';
+import livro_a_psicologia_financeira from '../img/a_psicologia_financeira.jpg';
 
 const Card = () => {
     let nome_autor = ["Richard Dawkins", "Dale Carnegie", "Robert T. Kiyosaki", "Hastings e Meyer", "Daniel Kahneman", "Ryan Holiday",
     "Hal Elrod", "Brené Brown","T. Harv", "George S.", "William H.", "Daniel Goleman", "Louise L.", "Napoleon Hill", "Napoleon Hill", 
-    "Joseph Murphy", "Tiago Brunet"];
+    "Joseph Murphy", "Tiago Brunet", "Paulo Vieira", "Greg Mckeown", "James Clear", "Richard Branson", "Dr. Suhas", "Morgan Housel"];
     
     let alt_imagem = ["O Gene Egoísta, Richard Dawkins", "Como fazer amigos e influenciar pessoas, Dale Carnegie", "Pai Rico, Pai Pobre", "A Regra é Não Ter Regras", 
     "Rápido e Devagar", "O Ego é Seu Inimigo", "O Milagre da Manhã", "A Coragem de Ser Imperfeito", "Os Segredos da Mente Milionária",
     "O Homem Mais Rico da Babilônia", "Arrume Sua Cama", "Foco", "Você Pode Curar Sua Vida", "Quem Pensa Henriquece", "Mais Esperto que o Diabo",
-    "O Poder do Subconsciente", "Especialista em Pessoas"]
+    "O Poder do Subconsciente", "Especialista em Pessoas", "O Poder da Autorresponsabilidade", "Essencialismo", "Hábitos Atômicos", 
+    "O Jeito Disney de Encantar Clientes", "Mude Seus Horários, Mude Sua Vida", "A Psicologia Financeira"]
     
     let url = ["https://amzn.to/3nn7mSI", "https://amzn.to/40foeJB", "https://amzn.to/3JJj8Oz", "https://amzn.to/3nkh2gC", "https://amzn.to/3LRp0YJ",
     "https://amzn.to/3lAGGNT", "https://amzn.to/3JNmKzh", "https://amzn.to/3K98ySu", "https://amzn.to/40m570r", "https://amzn.to/3z7r07N",
     "https://amzn.to/3FS7dNh", "https://amzn.to/3LQDWGw", "https://amzn.to/40k0q7m", "https://amzn.to/3ZiNMV1", "https://amzn.to/40CTHFe",
-    "https://amzn.to/3ZfEwAP", "https://amzn.to/3z7UVfX"];
+    "https://amzn.to/3ZfEwAP", "https://amzn.to/3z7UVfX", "https://amzn.to/40wNnjf", "https://amzn.to/3LNVDGZ", "https://amzn.to/3ZhHSDv",
+    "https://amzn.to/3ZhIdpL", "https://amzn.to/3nl0WU6", "https://amzn.to/3lDuXy2"];
     
     let url_imagem = [livro_ogene_egoista, livro_como_faz_amigos, livro_pai_rico_pai_pobre, livro_a_regra_e_nao_ter_regra, livro_rapido_e_devagar,
         livro_o_ego_e_seu_inimigo, livro_o_milagre_da_manha, livro_a_coragem_de_ser_imperfeito, livro_os_segredos_da_mente_milionaria,
         livro_o_homem_mais_rico_da_babilonia, livro_arrume_sua_cama, livro_foco, livro_voce_pode_curar_sua_vida, livro_quem_pensa_enriquece, 
-        livro_mais_esperto_que_o_diabo, livro_o_poder_do_subconsciente, livro_especialista_em_pessoas];
+        livro_mais_esperto_que_o_diabo, livro_o_poder_do_subconsciente, livro_especialista_em_pessoas, livro_o_poder_da_autorresponsabilidade,
+        livro_essencialismo, livro_habitos_atomicos, livro_o_jeito_disney_de_encantar_clientes, livro_mude_seus_horarios_mude_sua_vida,
+        livro_a_psicologia_financeira];
 
   return (
     <div class="cards">
@@ -62,12 +72,12 @@ const Card = () => {
         <Imagem url={url[14]} url_imagem={url_imagem[14]} alt_imagem={alt_imagem[14]} nome_autor={nome_autor[14]} />
         <Imagem url={url[15]} url_imagem={url_imagem[15]} alt_imagem={alt_imagem[15]} nome_autor={nome_autor[15]} />
         <Imagem url={url[16]} url_imagem={url_imagem[16]} alt_imagem={alt_imagem[16]} nome_autor={nome_autor[16]} />
-        <Imagem url={url[0]} url_imagem={url_imagem[0]} alt_imagem={alt_imagem[0]} nome_autor={nome_autor[0]} />
-        <Imagem url={url[0]} url_imagem={url_imagem[0]} alt_imagem={alt_imagem[0]} nome_autor={nome_autor[0]} />
-        <Imagem url={url[0]} url_imagem={url_imagem[0]} alt_imagem={alt_imagem[0]} nome_autor={nome_autor[0]} />
-        <Imagem url={url[0]} url_imagem={url_imagem[0]} alt_imagem={alt_imagem[0]} nome_autor={nome_autor[0]} />
-        <Imagem url={url[0]} url_imagem={url_imagem[0]} alt_imagem={alt_imagem[0]} nome_autor={nome_autor[0]} />
-        <Imagem url={url[0]} url_imagem={url_imagem[0]} alt_imagem={alt_imagem[0]} nome_autor={nome_autor[0]} />
+        <Imagem url={url[17]} url_imagem={url_imagem[17]} alt_imagem={alt_imagem[17]} nome_autor={nome_autor[17]} />
+        <Imagem url={url[18]} url_imagem={url_imagem[18]} alt_imagem={alt_imagem[18]} nome_autor={nome_autor[18]} />
+        <Imagem url={url[19]} url_imagem={url_imagem[19]} alt_imagem={alt_imagem[19]} nome_autor={nome_autor[19]} />
+        <Imagem url={url[20]} url_imagem={url_imagem[20]} alt_imagem={alt_imagem[20]} nome_autor={nome_autor[20]} />
+        <Imagem url={url[21]} url_imagem={url_imagem[21]} alt_imagem={alt_imagem[21]} nome_autor={nome_autor[21]} />
+        <Imagem url={url[22]} url_imagem={url_imagem[22]} alt_imagem={alt_imagem[22]} nome_autor={nome_autor[22]} />
         <Imagem url={url[0]} url_imagem={url_imagem[0]} alt_imagem={alt_imagem[0]} nome_autor={nome_autor[0]} />
         <Imagem url={url[0]} url_imagem={url_imagem[0]} alt_imagem={alt_imagem[0]} nome_autor={nome_autor[0]} />
         <Imagem url={url[0]} url_imagem={url_imagem[0]} alt_imagem={alt_imagem[0]} nome_autor={nome_autor[0]} />
