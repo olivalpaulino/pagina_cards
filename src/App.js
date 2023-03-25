@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
      <h1>Ofertas do Dia</h1>
-     <Card props={"Card"} />
+     <Card />
     </div>
   );
 }
