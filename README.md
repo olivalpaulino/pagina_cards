@@ -30,5 +30,5 @@ Observação: Considerando que você já esteja dentro da pasta do projeto
 ## Demais Informações:
 
 O Projeto roda em: localhost:3000 <br>
-Assim, não se esqueça de se inscrever no canal para acompanhar mais conteúdos como este de: Java, JavaScript, React, Html, Css e em breve, Spring Boot, ou seja, Do Back ao Front-end. Acesse e confira: https://www.youtube.com/@olivalpaulino/playlists
-
+Assim, não se esqueça de se inscrever no canal para acompanhar mais conteúdos como este de: Java, JavaScript, React, Html, Css e em breve, Spring Boot, ou seja, Do Back ao Front-end. Acesse e confira: https://www.youtube.com/@olivalpaulino/playlists <br>
+Curso de JavaScript do Básico ao Avançado: https://www.udemy.com/course/javascript-com-orientacao-a-objetos-e-dom-aprenda-rapido/?couponCode=F158D14301BAF8E33B83
